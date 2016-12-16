@@ -23,7 +23,7 @@ if(isset($_POST['replybtn'])){
   $template->replies = $topic->getReplies($t_id);
   $template->title = $topic->getTopic($t_id)->title;
   }else {
-    
+    echo "do else code here";
   }
   echo $template;
 ?>
